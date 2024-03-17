@@ -35,6 +35,24 @@ hr {
 	color: #70547C;
 }
 
+.contact-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-1 {
+    flex: 1 1 50%; /* Rozmiar każdej kolumny - 50% szerokości */
+    min-width: 300px; /* Minimalna szerokość kolumny */
+    box-sizing: border-box; /* Zapobiega dodatkowemu paddingowi i borderowi */
+    padding: 10px; /* Dodatkowy padding dla estetyki */
+}
+
+@media (max-width: 800px) { /* Dla ekranów o maksymalnej szerokości 600px */
+    .col-1 {
+        flex-basis: 100%; /* Każda kolumna zajmuje 100% szerokości na mniejszych ekranach */
+    }
+}
+
 /*-----------------------------------------NAVBAR*/
 
 .section-scrollspy {
