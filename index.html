@@ -3,7 +3,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Witaj Bratku!</title>
     <!-- CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -13,6 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- CSS  -->
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- EMAIL -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -26,6 +28,13 @@
 
 <body>
     <!-- Navigation  -->
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fa fa-times" aria-hidden="true"></i></h1>
+        <div id="img_here"></div>
+    </div>
     <div class="navbar-fixed" id="home">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
@@ -37,7 +46,6 @@
                     <li><a href="#home">O Nas</a></li>
                     <li><a href="#gallery">Galeria</a></li>
                     <li><a href="#dont-touch">Cennik</a></li>
-                    <!-- <li><a href="#how-it-works">How It Works</a></li> -->
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
@@ -47,27 +55,12 @@
         <li><a class="sidenav-close" href="#home">O Nas</a></li>
         <li><a class="sidenav-close" href="#gallery">Galeria</a></li>
         <li><a class="sidenav-close" href="#dont-touch">Cennik</a></li>
-        <!-- <li><a class="sidenav-close" href="#how-it-works">How It Works</a></li> -->
         <li><a class="sidenav-close" href="#contact">Kontakt</a></li>
     </ul>
     <!-- Banner  -->
     <div id="index-banner" class="parallax-container section scrollspy">
-        <!-- <div class="section no-pad-bot">
-            <div class="container">
-                <br><br>
-                <h1 class="header center grey-text text-lighten-5">SOLARCAN</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">Extreme time exposure experiment capturing the path of the sun</h5>
-                </div>
-                <div class="row center">
-                    <a href="assets/images/wizytowka.pdf" id="download-button"
-                        class="btn-large waves-effect waves-light red lighten-1">Wizytówka</a>
-                </div>
-                <br><br>
-            </div>
-        </div> -->
-        <div class="parallax"><img src="assets/images/background.jpeg" style="width:100%;height:auto; object-fit: cover;"
-                alt="Witaj Bratku!"></div>
+        <div class="parallax"><img src="assets/images/background.jpeg"
+                style="width:100%;height:auto; object-fit: cover;" alt="Witaj Bratku!"></div>
     </div>
     <!-- Icon Section -->
     <div class="container">
@@ -122,8 +115,8 @@
     </div>
     <!-- Image -->
     <div class="parallax-container">
-        <div class="parallax"><img src="assets/images/background-2.jpeg" style="width: 100%; height: auto; object-fit: cover;"
-                alt="Solarcan image1"></div>
+        <div class="parallax"><img src="assets/images/background-2.jpeg"
+                style="width: 100%; height: auto; object-fit: cover;" alt="Solarcan image1"></div>
     </div>
     <!-- Section - Carousel -->
     <div class="container section-scrollspy" id="gallery">
@@ -167,8 +160,8 @@
     </div>
     <!-- Image  -->
     <div class="parallax-container valign-wrapper">
-        <div class="parallax"><img src="assets/images/background-2.jpeg" style="width: 100%; height: auto; object-fit: cover;"
-                alt="Solarcan image1"></div>
+        <div class="parallax"><img src="assets/images/background-2.jpeg"
+                style="width: 100%; height: auto; object-fit: cover;" alt="Solarcan image1"></div>
     </div>
     <!-- Section - Don't touch -->
     <div class="container section-scrollspy" id="dont-touch">
@@ -177,16 +170,44 @@
                 <div class="col s12 center">
                     <h4 class="center-align welcome" style="font-family: 'DM Sans';"><i class="fa fa-money"
                             aria-hidden="true"></i> Przykladowy Cennik</h4>
-                    <p class="light">TO DO</p>
-                    <!-- <img src="assets/images/background-2.jpeg" alt="failed photograph" id="failed-photograph"> -->
+                    <p class="light">Zapraszamy do zapoznania się z naszym cennikiem, który przedstawia orientacyjne
+                        koszty naszych usług florystycznych. Warto jednak zaznaczyć, że nasze ceny są elastyczne i
+                        otwarte na negocjacje, aby sprostać Twoim indywidualnym potrzebom oraz oczekiwaniom odnośnie
+                        zakresu projektu. Nasz doświadczony zespół z przyjemnością udzieli Ci wszelkich niezbędnych
+                        informacji oraz omówi szczegóły Twojego zamówienia. Nie wahaj się skontaktować z nami, abyśmy
+                        mogli stworzyć dla Ciebie spersonalizowaną ofertę, dopasowaną do Twoich preferencji i budżetu.
+                        Jesteśmy tu, aby sprawić, że Twoja wyjątkowa uroczystość stanie się jeszcze bardziej wyjątkowa,
+                        dbając o każdy detal i dostosowując się do Twoich potrzeb.</p>
+                    <table>
+                        <tr>
+                            <th>Usługa</th>
+                            <th>Cena</th>
+                        </tr>
+                        <tr>
+                            <td>Bukiet ślubny</td>
+                            <td>500 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Dekoracja kościoła</td>
+                            <td>3000 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Dekoracja sali weselnej</td>
+                            <td>3000 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Kompozycja na stół komunijny</td>
+                            <td>3000 zł</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
     <!-- Image -->
     <div class="parallax-container valign-wrapper">
-        <div class="parallax"><img src="assets/images/background-2.jpeg" style="width: 100%; height: auto; object-fit: cover;"
-                alt="Solarcan image1"></div>
+        <div class="parallax"><img src="assets/images/background-2.jpeg"
+                style="width: 100%; height: auto; object-fit: cover;" alt="Solarcan image1"></div>
     </div>
     <!-- Section - Contact  -->
     <div class="container  section-scrollspy" id="contact">

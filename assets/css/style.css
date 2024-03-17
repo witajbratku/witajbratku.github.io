@@ -108,8 +108,57 @@ nav .brand-logo {
 
 /*-----------------------------------------CAROUSEL*/
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
 #advertise {
 	font-style: italic;
+}
+
+#magnify {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.92);
+	position: fixed;
+	z-index: 4;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#magnify h1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 5% 5%;
+	color: #fff;
+	transition: 0.4s ease-in-out;
+}
+
+#magnify h1:hover {
+	color: rgb(255, 44, 90);
+	cursor: pointer;
+}
+
+#img_here {
+	width: 90%;
+	height: 90%;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	margin: 0px auto;
 }
 
 #photos {
