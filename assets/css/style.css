@@ -113,21 +113,78 @@ nav .brand-logo {
 
 /*-----------------------------------------CAROUSEL*/
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
 #advertise {
 	font-style: italic;
 }
 
-.carousel .carousel-item {
-	width: 400px !important;
+#magnify {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.92);
+	position: fixed;
+	z-index: 4;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.carousel {
-	margin-bottom: 120px;
+#magnify h1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 5% 5%;
+	color: #fff;
+	transition: 0.4s ease-in-out;
 }
 
-/*-----------------------------------------END CAROUSEL*/
+#magnify h1:hover {
+	color: rgb(255, 44, 90);
+	cursor: pointer;
+}
 
-/*-----------------------------------------FOOTER*/
+#img_here {
+	width: 90%;
+	height: 90%;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	margin: 0px auto;
+}
+
+#photos {
+	width: 100%;
+	columns: 3;
+	column-gap: 4%;
+	z-index: 1;
+	transition: 0.4s ease-in-out;
+}
+
+#photos img {
+	max-width: 300px;
+	height: auto;
+	margin: 4.5% 0px;
+	transition: 0.4s ease-in-out;
+}
+
+#photos img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
 
 .social-icon {
 	width: 15px;
@@ -146,6 +203,23 @@ nav .brand-logo {
 
 /*-----------------------------------------MEDIA QUERIES*/
 
+@media (max-width: 1000px) {
+	#photos {
+		columns: 1;
+		column-gap: 0%;
+	}
+
+	#photos img {
+		margin: 2% 0px;
+		max-width: 50px;
+	}
+
+	#photos img:hover {
+		transform: scale(1);
+		cursor: pointer;
+	}
+}
+
 @media only screen and (max-width : 992px) {
 	.parallax-container .section {
 		position: absolute;
@@ -154,14 +228,6 @@ nav .brand-logo {
 
 	#index-banner .section {
 		top: 10%;
-	}
-
-	.carousel .carousel-item {
-		width: 300px !important;
-	}
-
-	.carousel {
-		margin-bottom: 30px;
 	}
 }
 
