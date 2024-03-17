@@ -20,6 +20,11 @@ h5 {
 	color: #325864;
 }
 
+h6 {
+	text-transform: uppercase;
+	color: #325864;
+}
+
 p {
 	line-height: 2rem;
 	text-align: justify;
