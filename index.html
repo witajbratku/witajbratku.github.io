@@ -130,35 +130,36 @@
         <div class="section">
             <div class="row">
                 <div class="col s12 center">
-                    <h4><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</h4>
-                    <p class="light">This gallery shows what a Solarcan looks like. Also it shows what the photographic
-                        paper looks like, right after it has been taken out of the can. And the gallery contains two
-                        developed images. One of a Solarcan that remained in its position; you can see the vertically
-                        stacked paths of the sun. And another image, of a Solarcan that was moved during the exposure;
-                        you can see how the paths have slid to the side. It still looks interesting, but this wasn't
-                        intentional.</p>
+                    <h3 class="center-align welcome" style="font-family: 'DM Sans';">Galeria Naszych Projektów</h3>
+                    <p class="light">Witaj w naszej galerii projektów, miejscu pełnym inspiracji i piękna, gdzie możesz
+                        zanurzyć się w świat naszych najwyższej jakości florystycznych kreacji. Odkryj różnorodność
+                        naszych projektów, poczując magię kwiatów i niepowtarzalność każdej aranżacji, która tworzy
+                        niezapomnianą atmosferę każdej uroczystości.</p>
                 </div>
             </div>
 
             <div id="carousel-1">
-                <h5 class="center">Galeria 1</h5>
-                <div class="carousel">
-                    <a class="carousel-item"><img src="assets/images/01. before.jpg" alt="solarcan"></a>
-                    <a class="carousel-item"><img src="assets/images/01. scan.jpg" alt="first scan"></a>
-                    <a class="carousel-item"><img src="assets/images/01. edited.jpg" alt="first developed photograph"></a>
-                    <a class="carousel-item"><img src="assets/images/02. scan.jpg" alt="second scan"></a>
-                    <a class="carousel-item"><img src="assets/images/02. edited.jpg" alt="second developed photograph"></a>
+                <h5 class="center-align welcome" style="font-family: 'DM Sans';">Wesele Glamour</h5>
+                <div id="photos">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/bordowe/1.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/bordowe/2.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/bordowe/3.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/bordowe/4.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/bordowe/6.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/bordowe/7.jpeg">
                 </div>
             </div>
 
             <div id="carousel-2">
-                <h5 class="center">Galeria 2</h5>
-                <div class="carousel">
-                    <a class="carousel-item"><img src="assets/images/01. before.jpg" alt="solarcan"></a>
-                    <a class="carousel-item"><img src="assets/images/01. scan.jpg" alt="first scan"></a>
-                    <a class="carousel-item"><img src="assets/images/01. edited.jpg" alt="first developed photograph"></a>
-                    <a class="carousel-item"><img src="assets/images/02. scan.jpg" alt="second scan"></a>
-                    <a class="carousel-item"><img src="assets/images/02. edited.jpg" alt="second developed photograph"></a>
+                <h5 class="center-align welcome" style="font-family: 'DM Sans';">Wesele Słonecznikowe</h5>
+                <div id="photos">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/zotle/1.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/zotle/2.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/zotle/3.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/zotle/4.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/zotle/5.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/zotle/6.jpeg">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/images/wesela/zotle/7.jpeg">
                 </div>
             </div>
 
@@ -174,15 +175,10 @@
         <div class="section">
             <div class="row">
                 <div class="col s12 center">
-                    <h4><i class="fa fa-heart" aria-hidden="true"></i> Please no touching</h4>
-                    <p class="light">The Solarcan needs to remain very still. Otherwise, the photograph will turn out
-                        blurred. Or the path of the sun will have moved. You can see this in the image below: instead of
-                        the paths of the sun being stacked, they have moved to the side. Even the tiniest nudge could
-                        change the photograph. This is why Solarcans are usually attached to a static element such as a
-                        house, a gate, a tree or a pole. Tie wraps or gaffer tape are great ways to keep the Solarcan in
-                        place and prevent it from moving. We ask you kindly not to touch the Solarcan, to ensure that it
-                        doesn't move. Thank you in advance!</p>
-                    <img src="assets/images/failed.jpg" alt="failed photograph" id="failed-photograph">
+                    <h4 class="center-align welcome" style="font-family: 'DM Sans';"><i class="fa fa-money"
+                            aria-hidden="true"></i> Przykladowy Cennik</h4>
+                    <p class="light">TO DO</p>
+                    <!-- <img src="assets/images/background-2.jpeg" alt="failed photograph" id="failed-photograph"> -->
                 </div>
             </div>
         </div>
@@ -266,6 +262,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/scripts/init.js"></script>
     <script src="assets/scripts/email.js"></script>
+    <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>

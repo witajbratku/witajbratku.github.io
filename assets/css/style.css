@@ -112,17 +112,25 @@ nav .brand-logo {
 	font-style: italic;
 }
 
-.carousel .carousel-item {
-	width: 400px !important;
+#photos {
+	width: 100%;
+	columns: 3;
+	column-gap: 4%;
+	z-index: 1;
+	transition: 0.4s ease-in-out;
 }
 
-.carousel {
-	margin-bottom: 120px;
+#photos img {
+	max-width: 300px;
+	height: auto;
+	margin: 4.5% 0px;
+	transition: 0.4s ease-in-out;
 }
 
-/*-----------------------------------------END CAROUSEL*/
-
-/*-----------------------------------------FOOTER*/
+#photos img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
 
 .social-icon {
 	width: 15px;
@@ -141,6 +149,23 @@ nav .brand-logo {
 
 /*-----------------------------------------MEDIA QUERIES*/
 
+@media (max-width: 1000px) {
+	#photos {
+		columns: 1;
+		column-gap: 0%;
+	}
+
+	#photos img {
+		margin: 2% 0px;
+		max-width: 50px;
+	}
+
+	#photos img:hover {
+		transform: scale(1);
+		cursor: pointer;
+	}
+}
+
 @media only screen and (max-width : 992px) {
 	.parallax-container .section {
 		position: absolute;
@@ -149,14 +174,6 @@ nav .brand-logo {
 
 	#index-banner .section {
 		top: 10%;
-	}
-
-	.carousel .carousel-item {
-		width: 300px !important;
-	}
-
-	.carousel {
-		margin-bottom: 30px;
 	}
 }
 
