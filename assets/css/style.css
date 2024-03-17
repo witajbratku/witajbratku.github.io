@@ -7,22 +7,19 @@ html {
 }
 
 h2 {
-	color: #ba8c51;
+	color: #70547C;
 }
 
 h4 {
-	text-transform: uppercase;
-	color: #325864;
+	color: #70547C;
 }
 
 h5 {
-	text-transform: uppercase;
-	color: #325864;
+	color: #70547C;
 }
 
 h6 {
-	text-transform: uppercase;
-	color: #325864;
+	color: #70547C;
 }
 
 p {
@@ -196,7 +193,7 @@ th {
 }
 
 .footer-copyright {
-	background-color: #325864;
+	background-color: #70547C;
 }
 
 /*-----------------------------------------END FOOTER*/
