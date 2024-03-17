@@ -11,8 +11,8 @@ h2 {
 }
 
 h4 {
-    text-transform: uppercase;
-    color: #325864;
+	text-transform: uppercase;
+	color: #325864;
 }
 
 p {
@@ -21,11 +21,11 @@ p {
 }
 
 hr {
-    margin-top: 3rem;
+	margin-top: 3rem;
 }
 
 .welcome {
-    color: #325864;
+	color: #70547C;
 }
 
 /*-----------------------------------------NAVBAR*/
@@ -38,8 +38,8 @@ hr {
 nav ul a,
 .sidenav a,
 nav .brand-logo {
-    color: #444;
-    text-transform: uppercase;
+	color: #444;
+	text-transform: uppercase;
 }
 
 .sidenav-trigger {
@@ -52,13 +52,13 @@ nav .brand-logo {
 
 .parallax-container {
 	min-height: 380px;
-	line-height: 0;
-	height: auto;
-	color: rgba(255,255,255,.9);
+	line-height: 00;
+	width: auto;
+	color: rgba(255, 255, 255, .9);
 }
 
 .parallax-container .section {
-	width: 100%;
+	width: auto;
 }
 
 #failed-photograph {
@@ -87,22 +87,23 @@ nav .brand-logo {
 }
 
 .swal-button {
-    background-color: #4C8497;
+	background-color: #4C8497;
 }
 
 #input-fields {
-    margin-top: 1.8rem;
+	margin-top: 1.8rem;
 }
 
 .prefix {
-    color: #325864;
+	color: #325864;
 }
+
 /*-----------------------------------------END FORM*/
 
 /*-----------------------------------------CAROUSEL*/
 
 #advertise {
-    font-style: italic;
+	font-style: italic;
 }
 
 .carousel .carousel-item {
@@ -123,7 +124,7 @@ nav .brand-logo {
 
 .page-footer {
 	margin: 0;
-	background-color: #4C8497;
+	background-color: #70547C;
 }
 
 .footer-copyright {
@@ -162,27 +163,27 @@ nav .brand-logo {
 @media only screen and (max-width : 414px) {
 	h4 {
 		font-size: 2rem;
-    }
+	}
 }
 
 @media only screen and (max-width : 375px) {
 	h4 {
 		font-size: 1.8rem;
-    }
+	}
 }
 
 @media only screen and (max-width : 360px) {
 	h4 {
 		font-size: 1.6rem;
-    }
+	}
 
-    h5 {
-    font-size: 1.3rem;
-    }
+	h5 {
+		font-size: 1.3rem;
+	}
 }
 
 @media only screen and (max-width : 280px) {
 	h4 {
 		font-size: 1.4rem;
-    }
+	}
 }
