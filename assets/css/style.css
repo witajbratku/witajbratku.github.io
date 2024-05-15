@@ -2,6 +2,13 @@ body {
 	background-color: #fafafa;
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+		background-color: #fafafa;
+		position: absolute;
+	}
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -153,8 +160,8 @@ th {
 }
 
 #magnify {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	background: rgba(0, 0, 0, 0.92);
 	position: fixed;
 	z-index: 4;
@@ -185,26 +192,6 @@ th {
 	margin: 0px auto;
 }
 
-#photos {
-	width: 100%;
-	columns: 3;
-	column-gap: 4%;
-	z-index: 1;
-	transition: 0.4s ease-in-out;
-}
-
-#photos img {
-	max-width: 300px;
-	height: auto;
-	margin: 4.5% 0px;
-	transition: 0.4s ease-in-out;
-}
-
-#photos img:hover {
-	transform: scale(1.1);
-	cursor: pointer;
-}
-
 .social-icon {
 	width: 15px;
 }
@@ -222,22 +209,6 @@ th {
 
 /*-----------------------------------------MEDIA QUERIES*/
 
-@media (max-width: 1000px) {
-	#photos {
-		columns: 1;
-		column-gap: 0%;
-	}
-
-	#photos img {
-		margin: 2% 0px;
-		max-width: 50px;
-	}
-
-	#photos img:hover {
-		transform: scale(1);
-		cursor: pointer;
-	}
-}
 
 @media only screen and (max-width : 992px) {
 	.parallax-container .section {
@@ -283,3 +254,31 @@ th {
 		font-size: 1.4rem;
 	}
 }
+
+
+/* gallery */
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo-container img {
+    width: calc(33.33% - 10px); 
+    margin-bottom: 10px; 
+    object-fit: cover;
+}
+
+
+#photos img {
+	max-width: 300px;
+	height: auto;
+	margin: 4.5% 0px;
+	transition: 0.4s ease-in-out;
+} 
+
+#photos img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+} 
