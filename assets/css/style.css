@@ -271,14 +271,58 @@ th {
 }
 
 
-#photos img {
-	max-width: 300px;
-	height: auto;
-	margin: 4.5% 0px;
-	transition: 0.4s ease-in-out;
-} 
+/* CSS for images within each photo container */
+#photos-1 img,
+#photos-2 img,
+#photos-3 img,
+#photos-4 img,
+#photos-5 img {
+    max-width: 300px;
+    height: auto;
+    margin: 4.5% 0px;
+    transition: 0.4s ease-in-out;
+}
 
-#photos img:hover {
-	transform: scale(1.1);
-	cursor: pointer;
-} 
+/* Hover effect for images within each photo container */
+#photos-1 img:hover,
+#photos-2 img:hover,
+#photos-3 img:hover,
+#photos-4 img:hover,
+#photos-5 img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+/* Add styles for previous and next buttons */
+#prev_button,
+#next_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#prev_button {
+    left: 10px;
+}
+
+#next_button {
+    right: 10px;
+}
+
+
+#image_number {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
