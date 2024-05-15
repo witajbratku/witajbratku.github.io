@@ -47,6 +47,7 @@ function magnify(imglink, photoContainerId) {
     currentIndex = images.indexOf(imglink);
     // Display the clicked image
     displayImage(currentIndex, carouselId);
+    toggleArrows();
     // Show the magnify view
     $("#magnify").css("display", "flex");
     $("#magnify").addClass("animated fadeIn");
