@@ -14,14 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- CSS  -->
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <!-- EMAIL -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_1ZWpTzjcPjECN4VgDai4g");
-        })();
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">    
     <link href="https://fonts.cdnfonts.com/css/playlist" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
 </head>
@@ -45,8 +38,7 @@
     <div class="navbar-fixed" id="o-nas">
         <nav class="white" role="navigation" id="navigation-bar">
             <div class="nav-wrapper container">
-                <a id="logo-container" href="#" class="brand-logo"
-                    style="font-family: 'Playlist', sans-serif;text-transform:capitalize; color: #70547C;">Witaj
+                <a id="logo-container" href="#" class="brand-logo">Witaj
                     Bratku!</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
@@ -74,7 +66,7 @@
         <div class="section">
             <div class="row">
                 <div class="col s12">
-                    <h3 class="center-align welcome" style="font-family: 'DM Sans';">Odkryj Magię Kwiatów
+                    <h3 class="center-align welcome" >Odkryj Magię Kwiatów
                         <br /> z Naszą Pracownią Florystyczną
                     </h3>
                     <p class="light">Witaj w naszej pracowni florystycznej, gdzie każdy kwiat
@@ -122,7 +114,7 @@
     <!-- Image -->
     <div class="parallax-container">
         <div class="parallax"><img src="assets/images/background-2.jpeg"
-                style="width: 100%; height: auto; object-fit: cover;" alt="Solarcan image1"></div>
+                style="width: 100%; height: auto; object-fit: cover;" alt="Flowers"></div>
     </div>
     <!-- Section - Carousel -->
     <div class="container section-scrollspy" id="galeria">
@@ -178,7 +170,7 @@
             <hr color="#70547C">
             <div id="carousel-2">
                 <h5 class="center-align welcome" style="font-family: 'DM Sans'">Dekoracja
-                    Kościoła na Uroczystość Pierwszej Komunii Świetej</h5>
+                    Kościoła na Uroczystość Pierwszej Komunii Świętej</h5>
                 <div id="photos-2" class="photo-container">
                     <img onclick="magnify($(this).attr('src'), 'photos-2')" src="assets/images/komunie/1.jpeg">
                     <img onclick="magnify($(this).attr('src'), 'photos-2')" src="assets/images/komunie/2.jpeg">
@@ -258,7 +250,7 @@
     <!-- Image  -->
     <div class="parallax-container valign-wrapper">
         <div class="parallax"><img src="assets/images/background-2.jpeg"
-                style="width: 100%; height: auto; object-fit: cover;" alt="Solarcan image1"></div>
+                style="width: 100%; height: auto; object-fit: cover;" alt="Flowers"></div>
     </div>
     <!-- Section - Don't touch -->
     <div class="container section-scrollspy" id="cennik">
@@ -313,7 +305,7 @@
     <!-- Image -->
     <div class="parallax-container valign-wrapper">
         <div class="parallax"><img src="assets/images/background-2.jpeg"
-                style="width: 100%; height: auto; object-fit: cover;" alt="Solarcan image1"></div>
+                style="width: 100%; height: auto; object-fit: cover;" alt="Flowers"></div>
     </div>
     <!-- Section - Contact  -->
     <div class="container  section-scrollspy" id="kontakt">
@@ -324,35 +316,6 @@
                             aria-hidden="true"></i> Kontakt</h4>
                     <p class="center-align light">Możesz skontaktować się z nami mailowo, telefonicznie lub znaleźć nas
                         pod wskazanym adresem:</p>
-                    <!-- <div class="row">
-                        <form class="col s12 card-panel" onsubmit="return sendMail(this);">
-                            <div class="row" id="input-fields">
-                                <div class="input-field col s12 m6 offset-m3">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input type="text" name="name" class="form-control validate" id="name" required />
-                                    <label for="name">Name</label>
-                                </div>
-                                <div class="input-field col s12 m6 offset-m3">
-                                    <i class="material-icons prefix">email</i>
-                                    <input type="email" name="emailaddress" class="form-control validate"
-                                        id="emailaddress" minlength="7" maxlength="254" required />
-                                    <label for="emailaddress">E-mail Address</label>
-                                </div>
-                                <div class="input-field col s12 m6 offset-m3">
-                                    <i class="material-icons prefix">create</i>
-                                    <textarea id="message" name="message"
-                                        class="form-control materialize-textarea validate" maxlength="650"
-                                        required></textarea>
-                                    <label for="message">Your message</label>
-                                </div>
-                            </div>
-                            <div class="center-align">
-                                <button type="submit" class="btn-large send">Send</button>
-                            </div>
-                        </form>
-                    </div> -->
-
-
                     <div class="row contact-row">
                         <div class="col-1">
                             <iframe
@@ -407,7 +370,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/scripts/init.js"></script>
-    <script src="assets/scripts/email.js"></script>
     <script src="assets/scripts/index.js" type="text/javascript"></script>
 </body>
 

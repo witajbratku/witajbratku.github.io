@@ -13,22 +13,10 @@ html {
 	scroll-behavior: smooth;
 }
 
-h2 {
-	color: #70547C;
-}
-
-h3 {
-	color: #70547C;
-}
-
-h4 {
-	color: #70547C;
-}
-
-h5 {
-	color: #70547C;
-}
-
+h2,
+h3,
+h4,
+h5,
 h6 {
 	color: #70547C;
 }
@@ -43,7 +31,7 @@ hr {
 }
 
 .welcome {
-	color: #70547C;
+	font-family: 'DM Sans';
 }
 
 .contact-row {
@@ -64,6 +52,7 @@ hr {
     }
 }
 
+
 /*-----------------------------------------NAVBAR*/
 
 .section-scrollspy {
@@ -72,14 +61,20 @@ hr {
 }
 
 nav ul a,
-.sidenav a,
-nav .brand-logo {
-	color: #444;
+.sidenav a
+{
+	color: #70547C !important;
 	text-transform: uppercase;
 }
 
+.brand-logo{
+	font-family: 'Playlist', 'sans-serif';
+	text-transform:capitalize; 
+	color: #70547C !important;
+} 
+
 .sidenav-trigger {
-	color: #4C8497;
+	color: #70547C;
 }
 
 /*-----------------------------------------END NAVBAR*/
@@ -98,10 +93,6 @@ nav .brand-logo {
 	width: auto;
 }
 
-#failed-photograph {
-	max-width: 100%;
-}
-
 /*-----------------------------------------END IMAGES*/
 
 /*-----------------------------------------ICONS*/
@@ -115,30 +106,7 @@ nav .brand-logo {
 }
 
 /*-----------------------------------------END ICONS*/
-
-/*-----------------------------------------FORM*/
-
-.send {
-	background-color: #4C8497;
-	margin-bottom: 1.8rem;
-}
-
-.swal-button {
-	background-color: #4C8497;
-}
-
-#input-fields {
-	margin-top: 1.8rem;
-}
-
-.prefix {
-	color: #325864;
-}
-
-/*-----------------------------------------END FORM*/
-
-/*-----------------------------------------CAROUSEL*/
-
+/*-----------------------------------------CENNIK*/
 table {
 	width: 100%;
 	border-collapse: collapse;
@@ -154,10 +122,9 @@ td {
 th {
 	background-color: #f2f2f2;
 }
+/*-----------------------------------------END CENNIK*/
 
-#advertise {
-	font-style: italic;
-}
+/*-----------------------------------------IMG ZOOM*/
 
 #magnify {
 	width: 100%;
@@ -192,6 +159,8 @@ th {
 	margin: 0px auto;
 }
 
+/*-----------------------------------------END IMG ZOOM*/
+/*-----------------------------------------FOOTER*/
 .social-icon {
 	width: 15px;
 }
@@ -208,24 +177,6 @@ th {
 /*-----------------------------------------END FOOTER*/
 
 /*-----------------------------------------MEDIA QUERIES*/
-
-
-@media only screen and (max-width : 992px) {
-	.parallax-container .section {
-		position: absolute;
-		top: 40%;
-	}
-
-	#index-banner .section {
-		top: 10%;
-	}
-}
-
-@media only screen and (max-width : 600px) {
-	#index-banner .section {
-		top: 0;
-	}
-}
 
 @media only screen and (max-width : 414px) {
 	h4 {
@@ -255,8 +206,9 @@ th {
 	}
 }
 
+/*-----------------------------------------END MEDIA QUERIES*/
 
-/* gallery */
+/*-----------------------------------------GALLERY*/
 
 .photo-container {
     display: flex;
@@ -270,8 +222,6 @@ th {
     object-fit: cover;
 }
 
-
-/* CSS for images within each photo container */
 #photos-1 img,
 #photos-2 img,
 #photos-3 img,
@@ -283,7 +233,6 @@ th {
     transition: 0.4s ease-in-out;
 }
 
-/* Hover effect for images within each photo container */
 #photos-1 img:hover,
 #photos-2 img:hover,
 #photos-3 img:hover,
@@ -293,9 +242,6 @@ th {
     cursor: pointer;
 }
 
-
-
-/* Add styles for previous and next buttons */
 #prev_button,
 #next_button {
     position: absolute;
@@ -315,7 +261,6 @@ th {
     right: 10px;
 }
 
-
 #image_number {
     position: absolute;
     bottom: 10px;
@@ -326,3 +271,4 @@ th {
     font-size: 14px;
     border-radius: 5px;
 }
+/*-----------------------------------------END GALLERY*/
